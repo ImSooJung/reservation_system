@@ -11,7 +11,7 @@
     android:orientation="vertical"
     >
     <Chronometer
-        android:id="@+id/chronometer"
+        android:id="@+id/chrono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:format="예약에 걸린 시간 : %s"
@@ -48,17 +48,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <CalendarView
-                android:id="@+id/calender"
+                android:id="@+id/calendar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
                 <TimePicker
-                    android:id="@+id/time"
+                    android:id="@+id/time_pick"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="invisible"
+                    android:timePickerMode="spinner"
                   />
         </FrameLayout>
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
