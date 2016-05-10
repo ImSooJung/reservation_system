@@ -34,5 +34,21 @@ public class MainActivity extends AppCompatActivity {
         timePick.setVisibility(View.INVISIBLE);
         calView.setVisibility(View.INVISIBLE);
 
+        radioDate.setOnClickListener(new View.OnClickListener() {//익명클래스로 객체 생성할때 : new 클래스 이름
+
+            public void onClick(View v) {
+                calView.setVisibility(View.VISIBLE);
+                timePick.setVisibility(View.INVISIBLE);
+            }
+        });
+        radioTime.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                calView.setVisibility(View.INVISIBLE);
+                timePick.setVisibility(View.VISIBLE);
+        }
+    });
+
     }
 }
